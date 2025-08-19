@@ -1,9 +1,7 @@
 services:
   - type: web
     name: openai-proxy
-    runtime: image
-    image:
-      url: ghcr.io/berriai/litellm:main-stable
+    runtime: docker
     envVars:
       - key: PORT
         value: 4000
